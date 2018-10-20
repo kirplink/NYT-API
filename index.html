@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New York Times Article Search</title>
+    <!-- link to icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <!-- link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- link to page specific CSS -->
+    <link rel="stylesheet " type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 id="jumbotron-headline" class="display-4"><i class="far fa-newspaper"></i></i> New York Times Search</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="formDiv">
+                    <div id="formHeadline">
+                        <p><i class="far fa-newspaper"></i> Search Parameters</p>
+                    </div>
+                    <div id="form">
+                        <form id="aricle-form">
+                            <p>Search Term:</p>
+                            <input type="text" id="Search">
+                            <p>Number of Records to Retrieve:</p>
+                            <input type="number" id="articleNumbers" min="1" max="10" value="5">
+                            <p>Start Year (Optional):</p>
+                            <input type="date" id="startYear">
+                            <p>End Year (Optional):</p>
+                            <input type="date" id="endYear">
+                            <button id="searchButton" class="formButton"><i class="fas fa-search"></i> Search</button>
+                            <button id="clearButton" class="formButton"><i class="far fa-trash-alt"></i> Clear Results</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="seachResults">
+                    <div id="searchHeadline">
+                        <p><i class="far fa-newspaper"></i> Top Articles</p>
+                    </div>
+                    <div id="resultsDiv">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- link to jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <!-- link to App Javascript file -->
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
